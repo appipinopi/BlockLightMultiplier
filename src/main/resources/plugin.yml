@@ -1,0 +1,13 @@
+name: BlockLightMultiplier
+version: dev-6
+main: plugin.Main
+api-version: 1.17
+commands:
+  lit:
+    description: ブロックの明るさ倍率を設定します。
+    usage: /lit <blockID> <multiplier>
+    permission: blocklightmultiplier.admin
+permissions:
+  blocklightmultiplier.admin:
+    description: BlockLightMultiplier の管理者権限
+    default: op

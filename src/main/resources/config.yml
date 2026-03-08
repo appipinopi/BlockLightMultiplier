@@ -1,0 +1,42 @@
+# 言語設定 (jp, en, ch, ru)
+language: jp
+
+# データベース設定
+database:
+  type: sqlite # sqlite または mysql
+  host: localhost
+  port: 3306
+  name: minecraft
+  user: root
+  pass: ""
+
+# グローバル設定
+global_multipliers:
+  TORCH: 1.5
+  LANTERN: 2.0
+
+# ワールド別設定
+worlds:
+  world:
+    multipliers:
+      TORCH: 2.0
+  world_nether:
+    multipliers:
+      SOUL_TORCH: 3.0
+
+# ダイナミックライト (手持ちアイテムでの発光)
+dynamic_lighting:
+  enabled: true
+  items:
+    - TORCH
+    - SOUL_TORCH
+    - LANTERN
+    - GLOWSTONE
+    - SEA_LANTERN
+  multiplier: 1.2
+
+# タブ補完から除外するブロックのリスト
+excluded_from_tab_complete:
+  - LIGHT
+  - AIR
+  - BARRIER
